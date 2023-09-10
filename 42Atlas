@@ -1,1 +1,13 @@
+#!/system/bin/sh
+# atlas rom version
+madver="0.7"
+#magisk version / url
+magisk_ver="26.3"
+msum="B98F600DAC0BBCBC97FD1D5DAA0E21A0"
+url_magisk="https://github.com/alexmartz710/Atlas-ATV/raw/main/Magisk.v26.3.zip"
+url_gapps="https://madatv.b-cdn.net/open_gapps-arm64-7.1-pico-20200715.zip"
+useragent='Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+ip="$(ifconfig 'eth0'|awk '/inet addr/{print $2}'|cut -d ':' -f 2)"
 
+reboot_required=0
+cachereboot=0
